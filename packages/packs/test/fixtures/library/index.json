@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "library": "pagemd-library",
+  "version": "0.1.0",
+  "built": "2026-11-01",
+  "release": {
+    "repo": "gh4-io/pagemd-library",
+    "tag": "v0.1.0",
+    "indexAsset": "index.json"
+  },
+  "latest": {
+    "pml-sop-ink": {
+      "version": "0.1.0",
+      "file": "pml-sop-ink-0.1.0.zip"
+    },
+    "uofo-sop": {
+      "version": "0.1.0",
+      "file": "uofo-sop-0.1.0.zip"
+    }
+  },
+  "packs": [
+    {
+      "id": "pml-sop-ink",
+      "type": "sop",
+      "look": "ink",
+      "version": "0.1.0",
+      "file": "pml-sop-ink-0.1.0.zip",
+      "size": 480784,
+      "sha256": "8433cc6360ed1b0034465e5463c0a6f00ad1d42bf38f29d4a742e627aad31714"
+    },
+    {
+      "id": "uofo-sop",
+      "type": "sop",
+      "look": "uofo",
+      "version": "0.1.0",
+      "file": "uofo-sop-0.1.0.zip",
+      "size": 659772,
+      "sha256": "f6320578cb1a2d02ed27e68afdffc29d1c655256a21b0ebfd9480b9dddd1ac81"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "lib-checked",
+  "description": "A profile pack in the shared profiles folder (phase L2): found by name, its files next to it",
+  "resources": {
+    "template": "./lib-checked/page.html",
+    "css": ["./lib-checked/style.css", "./lib-checked/missing.css"]
+  },
+  "validation": {
+    "required_fields": ["title", "owner"]
+  }
+}

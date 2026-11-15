@@ -1,0 +1,31 @@
+{
+  "name": "@pagemd/validate",
+  "version": "0.0.1-rc1",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "pagemd checks: the per-level validation a profile asks for (meta, profile, template, layout, styles, syntax, assets), the same in the CLI and the editor",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@pagemd/meta": "0.0.1-rc1",
+    "@pagemd/resolver": "0.0.1-rc1",
+    "@pagemd/syntax": "0.0.1-rc1",
+    "@pagemd/theme-kit": "0.0.1-rc1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh4-io/pagemd-common.git",
+    "directory": "packages/validate"
+  },
+  "homepage": "https://github.com/gh4-io/pagemd-common#readme",
+  "bugs": {
+    "url": "https://github.com/gh4-io/pagemd-common/issues"
+  }
+}

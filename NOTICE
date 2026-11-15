@@ -1,0 +1,12 @@
+pagemd-common
+Copyright 2025 Jason T. Grace
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes the Inter typeface, embedded in
+packages/theme-kit/defaults/styles/book-fonts.css, Copyright 2020 The Inter
+Project Authors (https://github.com/rsms/inter), licensed under the SIL Open
+Font License, Version 1.1 (packages/theme-kit/defaults/styles/book-fonts.LICENSE.txt).
+
+The UOFO ("Uncertified Organic Farmers Org") name and logo in the test
+fixtures are invented placeholders, not a real organisation.

@@ -1,0 +1,265 @@
+{
+  "docs/broken.md": {
+    "diagnostics": [
+      {
+        "severity": "warning",
+        "level": "meta",
+        "code": "empty-required-field",
+        "message": "Required field 'title' is present but empty",
+        "where": {
+          "line": 3
+        }
+      },
+      {
+        "severity": "error",
+        "level": "meta",
+        "code": "missing-required-field",
+        "message": "Missing required field: owner (required by profile ../profiles/checked.json)",
+        "where": {
+          "line": 0
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "meta",
+        "code": "wrong-type",
+        "message": "Property revision: \"Rev. 2\" should be a number",
+        "where": {
+          "line": 4
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "meta",
+        "code": "gate-off",
+        "message": "fancy_lists is not true, so this lettered or roman list prints as a numbered list: add fancy_lists: true to the frontmatter",
+        "where": {
+          "line": 9
+        }
+      },
+      {
+        "severity": "info",
+        "level": "meta",
+        "code": "unknown-property",
+        "message": "Property flavour is not used by pagemd, the profile or the template",
+        "where": {
+          "line": 5
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "profile",
+        "code": "unknown-profile-setting",
+        "message": "Profile checked has a setting pagemd doesn't read: colours",
+        "where": {
+          "file": "<fixture>/profiles/checked.json"
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "profile",
+        "code": "unknown-validation-setting",
+        "message": "validation.schema is not a validation setting (validation.schema was never read and is no longer a setting)",
+        "where": {
+          "file": "<fixture>/profiles/checked.json"
+        }
+      },
+      {
+        "severity": "info",
+        "level": "template",
+        "code": "unknown-template-property",
+        "message": "Template report.html shows a property this document doesn't set and pagemd doesn't know, printed empty: company",
+        "where": {
+          "file": "<fixture>/templates/report.html"
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "layout",
+        "code": "layout-name-without-page-rule",
+        "message": "LAYOUT(wide) has no page rule (.page-wide { page: wide } and @page wide { … }): these pages look like the others",
+        "where": {
+          "line": 18
+        }
+      },
+      {
+        "severity": "error",
+        "level": "styles",
+        "code": "css-not-found",
+        "message": "CSS file not found: ../styles/missing.css (resolved to <fixture>/styles/missing.css)"
+      },
+      {
+        "severity": "warning",
+        "level": "styles",
+        "code": "font-not-found",
+        "message": "Font file not found: ../styles/gone.woff2 (resolved to <fixture>/styles/gone.woff2)"
+      },
+      {
+        "severity": "warning",
+        "level": "styles",
+        "code": "css-braces",
+        "message": "Stylesheet report.css: its { and } don't pair up, so the rest of the file may be ignored",
+        "where": {
+          "file": "<fixture>/styles/report.css"
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "styles",
+        "code": "template-asset-missing",
+        "message": "File not found: img/paper.png, named in the stylesheet report.css (looked in <fixture>/styles/img/paper.png and <fixture>/docs/img/paper.png)",
+        "where": {
+          "file": "<fixture>/styles/report.css",
+          "searched": [
+            "<fixture>/styles/img/paper.png",
+            "<fixture>/docs/img/paper.png"
+          ]
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "syntax",
+        "code": "unknown-directive",
+        "message": "Unknown directive ::BREAK: pagemd doesn't know it and leaves it as a hidden comment",
+        "where": {
+          "line": 12
+        }
+      },
+      {
+        "severity": "error",
+        "level": "syntax",
+        "code": "include-not-found",
+        "message": "Included file not found: parts/missing.md (resolved to <fixture>/docs/parts/missing.md)",
+        "where": {
+          "line": 14
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "syntax",
+        "code": "figure-setting",
+        "message": "FIGURE: height=\"tall\" is not a CSS length (e.g. 300px, 50%, auto), so it is ignored",
+        "where": {
+          "line": 16
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "assets",
+        "code": "image-not-found",
+        "message": "Image not found: img/gone.png",
+        "where": {
+          "line": 20
+        }
+      }
+    ],
+    "enabled": true,
+    "strict": false,
+    "profileId": "../profiles/checked.json"
+  },
+  "docs/plain.md": {
+    "diagnostics": [],
+    "enabled": false,
+    "strict": false,
+    "profileId": "../profiles/quiet.json"
+  },
+  "docs/legacy.md": {
+    "diagnostics": [
+      {
+        "severity": "info",
+        "level": "profile",
+        "code": "deprecated-setting",
+        "message": "Profile legacy: `layout.source` is an old setting: use `resources.template` (and `resources.layout` for the page CSS)",
+        "where": {
+          "file": "<fixture>/profiles/legacy.json"
+        }
+      },
+      {
+        "severity": "info",
+        "level": "template",
+        "code": "unknown-template-property",
+        "message": "Template report.html shows a property this document doesn't set and pagemd doesn't know, printed empty: company",
+        "where": {
+          "file": "<fixture>/templates/report.html"
+        }
+      }
+    ],
+    "enabled": true,
+    "strict": false,
+    "profileId": "../profiles/legacy.json"
+  },
+  "docs/includes.md": {
+    "diagnostics": [
+      {
+        "severity": "info",
+        "level": "syntax",
+        "code": "include-not-alone",
+        "message": "!!!include(parts/chapter.md)!!! is not on a line of its own (or is inside code), so it is not expanded: put it on its own line",
+        "where": {
+          "line": 9
+        }
+      },
+      {
+        "severity": "info",
+        "level": "syntax",
+        "code": "include-frontmatter",
+        "message": "Included file parts/chapter.md: its frontmatter is ignored (only the main file's settings count)",
+        "where": {
+          "line": 5
+        }
+      },
+      {
+        "severity": "error",
+        "level": "syntax",
+        "code": "include-not-found",
+        "message": "Included file not found: deeper/gone.md (included by parts/chapter.md, resolved to <fixture>/docs/parts/deeper/gone.md)",
+        "where": {
+          "line": 5
+        }
+      },
+      {
+        "severity": "warning",
+        "level": "syntax",
+        "code": "include-layout-open",
+        "message": "Included file parts/chapter.md ends on another page type than the one before it: pagemd adds <!-- ::LAYOUT(default) --> after it, so the text after the include stays on its page type",
+        "where": {
+          "line": 5
+        }
+      },
+      {
+        "severity": "error",
+        "level": "syntax",
+        "code": "include-circular",
+        "message": "Included file parts/loop-a.md → loop-b.md → loop-a.md comes back to a file that is already being included, so pagemd prints a note instead",
+        "where": {
+          "line": 7
+        }
+      }
+    ],
+    "enabled": true,
+    "strict": false,
+    "profileId": "../profiles/includes.json"
+  },
+  "docs/by-name.md": {
+    "diagnostics": [
+      {
+        "severity": "error",
+        "level": "meta",
+        "code": "missing-required-field",
+        "message": "Missing required field: owner (required by profile lib-checked)",
+        "where": {
+          "line": 0
+        }
+      },
+      {
+        "severity": "error",
+        "level": "styles",
+        "code": "css-not-found",
+        "message": "CSS file not found: ./lib-checked/missing.css (resolved to <fixture>/config/profiles/lib-checked/missing.css)"
+      }
+    ],
+    "enabled": true,
+    "strict": false,
+    "profileId": "lib-checked"
+  }
+}

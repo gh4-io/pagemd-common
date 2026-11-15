@@ -1,0 +1,2 @@
+# Keep the default files byte for byte (pagemd checks its copies against them)
+* -text

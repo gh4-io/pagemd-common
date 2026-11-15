@@ -1,0 +1,5 @@
+{
+  "id": "legacy",
+  "layout": { "type": "html", "source": "../templates/report.html" },
+  "validation": true
+}

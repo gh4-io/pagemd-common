@@ -1,0 +1,4 @@
+{
+  "id": "quiet",
+  "resources": { "template": "../templates/report.html" }
+}

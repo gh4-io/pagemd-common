@@ -1,0 +1,27 @@
+{
+  "name": "@pagemd/theme-kit",
+  "version": "0.0.1-rc1",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "pagemd styling: CSS layer order, the style block, running headers and footers, page geometry, and pagemd's default CSS and page layout",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./defaults/*": "./defaults/*"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false,
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh4-io/pagemd-common.git",
+    "directory": "packages/theme-kit"
+  },
+  "homepage": "https://github.com/gh4-io/pagemd-common#readme",
+  "bugs": {
+    "url": "https://github.com/gh4-io/pagemd-common/issues"
+  }
+}

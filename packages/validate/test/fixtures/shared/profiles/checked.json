@@ -1,0 +1,16 @@
+{
+  "id": "checked",
+  "description": "Every level on, with a few problems of its own",
+  "colours": { "accent": "teal" },
+  "resources": {
+    "template": "../templates/report.html",
+    "layout": "../layouts/report.css",
+    "css": ["../styles/report.css", "../styles/missing.css"],
+    "fonts": ["../styles/gone.woff2"]
+  },
+  "metadata": { "defaults": { "status": "Draft" } },
+  "validation": {
+    "required_fields": ["document_id", "title", "owner"],
+    "schema": "frontmatter.schema.json"
+  }
+}

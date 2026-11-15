@@ -1,0 +1,117 @@
+{
+  "unchecked, checked, capital X": {
+    "markdown": "- [ ] todo\n- [x] done\n- [X] DONE\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> todo</li>\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> done</li>\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> DONE</li>\n</ul>\n"
+  },
+  "numbered": {
+    "markdown": "1. [ ] one\n2. [x] two\n",
+    "fancyLists": false,
+    "html": "<ol class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> one</li>\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> two</li>\n</ol>\n"
+  },
+  "fancy list": {
+    "markdown": "a. [ ] one\nb. [x] two\n",
+    "fancyLists": true,
+    "html": "<ol type=\"a\" class=\"contains-task-list list-lower-alpha\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> one</li>\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> two</li>\n</ol>\n"
+  },
+  "nested": {
+    "markdown": "- [ ] parent\n  - [x] child\n  - plain\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> parent\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> child</li>\n<li>plain</li>\n</ul>\n</li>\n</ul>\n"
+  },
+  "loose": {
+    "markdown": "- [ ] one\n\n- [x] two\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\">\n<p><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> one</p>\n</li>\n<li class=\"task-list-item\">\n<p><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> two</p>\n</li>\n</ul>\n"
+  },
+  "in a table (not a list)": {
+    "markdown": "| a |\n|---|\n| [ ] x |\n",
+    "fancyLists": false,
+    "html": "<table>\n<thead>\n<tr>\n<th>a</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>[ ] x</td>\n</tr>\n</tbody>\n</table>\n"
+  },
+  "brackets later in the line": {
+    "markdown": "- some [ ] text\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li>some [ ] text</li>\n</ul>\n"
+  },
+  "empty item": {
+    "markdown": "- [ ]\n- [x]\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li>[ ]</li>\n<li>[x]</li>\n</ul>\n"
+  },
+  "tab after the bracket": {
+    "markdown": "- [ ]\ttab\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li>[ ]\ttab</li>\n</ul>\n"
+  },
+  "no space": {
+    "markdown": "- [x]text\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li>[x]text</li>\n</ul>\n"
+  },
+  "attributes after the text": {
+    "markdown": "- [x] done {.done}\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item done\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> done</li>\n</ul>\n"
+  },
+  "attributes first": {
+    "markdown": "- [ ] {.cls} todo\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> {.cls} todo</li>\n</ul>\n"
+  },
+  "bold first": {
+    "markdown": "- [ ] **bold** rest\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> <strong>bold</strong> rest</li>\n</ul>\n"
+  },
+  "link first": {
+    "markdown": "- [x] [link](u) rest\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> <a href=\"u\">link</a> rest</li>\n</ul>\n"
+  },
+  "in a blockquote": {
+    "markdown": "> - [ ] quoted task\n",
+    "fancyLists": false,
+    "html": "<blockquote>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> quoted task</li>\n</ul>\n</blockquote>\n"
+  },
+  "a link [x](u)": {
+    "markdown": "- [x](u) not a task\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li><a href=\"u\">x</a> not a task</li>\n</ul>\n"
+  },
+  "two spaces": {
+    "markdown": "- [x]  two spaces\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\">  two spaces</li>\n</ul>\n"
+  },
+  "second paragraph of an item": {
+    "markdown": "- one\n\n  [ ] not first\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li>\n<p>one</p>\n<p>[ ] not first</p>\n</li>\n</ul>\n"
+  },
+  "mixed list": {
+    "markdown": "- [ ] task\n- plain\n- [x] done\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> task</li>\n<li>plain</li>\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> done</li>\n</ul>\n"
+  },
+  "star and plus bullets": {
+    "markdown": "* [ ] star\n\n+ [x] plus\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> star</li>\n</ul>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> plus</li>\n</ul>\n"
+  },
+  "list attributes line": {
+    "markdown": "- [ ] Not done\n- [x] Completed\n{.task-list data-project=\"website\"}\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list task-list\" data-project=\"website\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> Not done</li>\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" checked=\"\" disabled=\"\" type=\"checkbox\"> Completed</li>\n</ul>\n"
+  },
+  "footnote in a task": {
+    "markdown": "- [ ] task[^1]\n\n[^1]: Note.\n",
+    "fancyLists": false,
+    "html": "<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input class=\"task-list-item-checkbox\" disabled=\"\" type=\"checkbox\"> task<sup class=\"footnote-ref\"><a href=\"#fn1\" id=\"fnref1\">[1]</a></sup></li>\n</ul>\n<hr class=\"footnotes-sep\">\n<section class=\"footnotes\">\n<ol class=\"footnotes-list\">\n<li id=\"fn1\" class=\"footnote-item\"><p>Note. <a href=\"#fnref1\" class=\"footnote-backref\">↩︎</a></p>\n</li>\n</ol>\n</section>\n"
+  },
+  "escaped bracket": {
+    "markdown": "- \\[ ] not a task\n",
+    "fancyLists": false,
+    "html": "<ul>\n<li>[ ] not a task</li>\n</ul>\n"
+  }
+}

@@ -1,0 +1,58 @@
+/* Primary PageMD Styles */
+:root {
+  --color-primary: #2563eb;
+  --color-text: #1f2937;
+  --color-gray: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+}
+
+/* Constrain width for HTML viewing (screen only, not PDF) */
+@media screen {
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+
+p {
+  margin: 1em 0;
+}
+
+code {
+  background: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+pre {
+  background: #f9fafb;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}

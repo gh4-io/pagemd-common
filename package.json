@@ -1,0 +1,39 @@
+{
+  "name": "pagemd-common",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Shared, browser-safe pagemd packages used by the pagemd CLI and pagemd-editor",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "deps:check": "npm outdated"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "fast-check": "4.10.2",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "markdown-it": "15.0.2",
+    "linkify-it": "6.1.0",
+    "mdurl": "2.1.0"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh4-io/pagemd-common.git"
+  },
+  "homepage": "https://github.com/gh4-io/pagemd-common#readme",
+  "bugs": {
+    "url": "https://github.com/gh4-io/pagemd-common/issues"
+  }
+}

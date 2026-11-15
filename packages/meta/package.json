@@ -1,0 +1,27 @@
+{
+  "name": "@pagemd/meta",
+  "version": "0.0.1-rc1",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "pagemd document properties: the field catalogue, normalizing, layering, requirements and syntax gates",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./catalogue.json": "./catalogue.json"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false,
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh4-io/pagemd-common.git",
+    "directory": "packages/meta"
+  },
+  "homepage": "https://github.com/gh4-io/pagemd-common#readme",
+  "bugs": {
+    "url": "https://github.com/gh4-io/pagemd-common/issues"
+  }
+}

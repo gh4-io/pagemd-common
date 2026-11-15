@@ -1,0 +1,6 @@
+{
+  "id": "includes",
+  "description": "Only the syntax level on (C12: the include checks)",
+  "resources": { "template": "../templates/report.html" },
+  "validation": { "meta": false, "profile": false, "template": false, "layout": false, "styles": false, "assets": false }
+}

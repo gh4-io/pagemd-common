@@ -1,0 +1,29 @@
+{
+  "name": "@pagemd/resolver",
+  "version": "0.0.1-rc1",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "pagemd file lookup: project root, the 5-tier search, path tokens, profiles with inheritance, templates and stylesheets, resolveDocument()",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@pagemd/meta": "0.0.1-rc1",
+    "js-yaml": "5.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh4-io/pagemd-common.git",
+    "directory": "packages/resolver"
+  },
+  "homepage": "https://github.com/gh4-io/pagemd-common#readme",
+  "bugs": {
+    "url": "https://github.com/gh4-io/pagemd-common/issues"
+  }
+}

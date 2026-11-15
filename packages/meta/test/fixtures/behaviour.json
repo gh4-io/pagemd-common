@@ -1,0 +1,7220 @@
+{
+  "recordedFrom": "pagemd phase/c1-syntax cd583e9 (unchanged code), TZ=UTC",
+  "normalizeMetadata": [
+    {
+      "name": "empty",
+      "raw": {},
+      "result": {
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "empty, no defaults",
+      "raw": {},
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {}
+    },
+    {
+      "name": "key \"doc_id\"",
+      "raw": {
+        "doc_id": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"docId\"",
+      "raw": {
+        "docId": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"documentId\"",
+      "raw": {
+        "documentId": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"document-id\"",
+      "raw": {
+        "document-id": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"rev\"",
+      "raw": {
+        "rev": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "revision": "v"
+      }
+    },
+    {
+      "name": "key \"revisionNumber\"",
+      "raw": {
+        "revisionNumber": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "revision": "v"
+      }
+    },
+    {
+      "name": "key \"revision_number\"",
+      "raw": {
+        "revision_number": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "revision": "v"
+      }
+    },
+    {
+      "name": "key \"revision-number\"",
+      "raw": {
+        "revision-number": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "revision": "v"
+      }
+    },
+    {
+      "name": "key \"layout_template\"",
+      "raw": {
+        "layout_template": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pipeline_profile": "v"
+      }
+    },
+    {
+      "name": "key \"layoutTemplate\"",
+      "raw": {
+        "layoutTemplate": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pipeline_profile": "v"
+      }
+    },
+    {
+      "name": "key \"layout-template\"",
+      "raw": {
+        "layout-template": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pipeline_profile": "v"
+      }
+    },
+    {
+      "name": "key \"profile\"",
+      "raw": {
+        "profile": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pipeline_profile": "v"
+      }
+    },
+    {
+      "name": "key \"date\"",
+      "raw": {
+        "date": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "effective_date": "v"
+      }
+    },
+    {
+      "name": "key \"effectiveDate\"",
+      "raw": {
+        "effectiveDate": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "effective_date": "v"
+      }
+    },
+    {
+      "name": "key \"effective-date\"",
+      "raw": {
+        "effective-date": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "effective_date": "v"
+      }
+    },
+    {
+      "name": "key \"documentStatus\"",
+      "raw": {
+        "documentStatus": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "status": "v"
+      }
+    },
+    {
+      "name": "key \"document_status\"",
+      "raw": {
+        "document_status": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "status": "v"
+      }
+    },
+    {
+      "name": "key \"document-status\"",
+      "raw": {
+        "document-status": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "status": "v"
+      }
+    },
+    {
+      "name": "key \"style\"",
+      "raw": {
+        "style": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "styles": [
+          "v"
+        ]
+      }
+    },
+    {
+      "name": "key \"css\"",
+      "raw": {
+        "css": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "styles": [
+          "v"
+        ]
+      }
+    },
+    {
+      "name": "key \"stylesheet\"",
+      "raw": {
+        "stylesheet": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "styles": [
+          "v"
+        ]
+      }
+    },
+    {
+      "name": "key \"stylesheets\"",
+      "raw": {
+        "stylesheets": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "styles": [
+          "v"
+        ]
+      }
+    },
+    {
+      "name": "key \"syntax_theme\"",
+      "raw": {
+        "syntax_theme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"syntaxTheme\"",
+      "raw": {
+        "syntaxTheme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"syntax-theme\"",
+      "raw": {
+        "syntax-theme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"code_theme\"",
+      "raw": {
+        "code_theme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"codeTheme\"",
+      "raw": {
+        "codeTheme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"code-theme\"",
+      "raw": {
+        "code-theme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"highlightTheme\"",
+      "raw": {
+        "highlightTheme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"highlight-theme\"",
+      "raw": {
+        "highlight-theme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "highlight_theme": "v"
+      }
+    },
+    {
+      "name": "key \"toc_depth\"",
+      "raw": {
+        "toc_depth": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_levels": "v"
+      }
+    },
+    {
+      "name": "key \"tocDepth\"",
+      "raw": {
+        "tocDepth": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_levels": "v"
+      }
+    },
+    {
+      "name": "key \"toc-depth\"",
+      "raw": {
+        "toc-depth": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_levels": "v"
+      }
+    },
+    {
+      "name": "key \"tocLevels\"",
+      "raw": {
+        "tocLevels": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_levels": "v"
+      }
+    },
+    {
+      "name": "key \"toc-levels\"",
+      "raw": {
+        "toc-levels": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_levels": "v"
+      }
+    },
+    {
+      "name": "key \"tocTitle\"",
+      "raw": {
+        "tocTitle": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_title": "v"
+      }
+    },
+    {
+      "name": "key \"toc-title\"",
+      "raw": {
+        "toc-title": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_title": "v"
+      }
+    },
+    {
+      "name": "key \"tocPageNumbers\"",
+      "raw": {
+        "tocPageNumbers": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_page_numbers": true
+      }
+    },
+    {
+      "name": "key \"toc-page-numbers\"",
+      "raw": {
+        "toc-page-numbers": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_page_numbers": true
+      }
+    },
+    {
+      "name": "key \"toc_pagenumbers\"",
+      "raw": {
+        "toc_pagenumbers": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_page_numbers": true
+      }
+    },
+    {
+      "name": "key \"tocPageLevels\"",
+      "raw": {
+        "tocPageLevels": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_page_levels": "v"
+      }
+    },
+    {
+      "name": "key \"toc-page-levels\"",
+      "raw": {
+        "toc-page-levels": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_page_levels": "v"
+      }
+    },
+    {
+      "name": "key \"toc_pagelevels\"",
+      "raw": {
+        "toc_pagelevels": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_page_levels": "v"
+      }
+    },
+    {
+      "name": "key \"tocMinLevel\"",
+      "raw": {
+        "tocMinLevel": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_min_level": "v"
+      }
+    },
+    {
+      "name": "key \"toc-min-level\"",
+      "raw": {
+        "toc-min-level": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_min_level": "v"
+      }
+    },
+    {
+      "name": "key \"toc_minlevel\"",
+      "raw": {
+        "toc_minlevel": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc_min_level": "v"
+      }
+    },
+    {
+      "name": "key \"indexTitle\"",
+      "raw": {
+        "indexTitle": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "index_title": "v"
+      }
+    },
+    {
+      "name": "key \"index-title\"",
+      "raw": {
+        "index-title": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "index_title": "v"
+      }
+    },
+    {
+      "name": "key \"fancyLists\"",
+      "raw": {
+        "fancyLists": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "fancy_lists": true
+      }
+    },
+    {
+      "name": "key \"fancy-lists\"",
+      "raw": {
+        "fancy-lists": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "fancy_lists": true
+      }
+    },
+    {
+      "name": "key \"colorScheme\"",
+      "raw": {
+        "colorScheme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "color_scheme": "v"
+      }
+    },
+    {
+      "name": "key \"color-scheme\"",
+      "raw": {
+        "color-scheme": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "color_scheme": "v"
+      }
+    },
+    {
+      "name": "key \"pagedjsTimeout\"",
+      "raw": {
+        "pagedjsTimeout": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pagedjs_timeout": "v"
+      }
+    },
+    {
+      "name": "key \"pagedjs-timeout\"",
+      "raw": {
+        "pagedjs-timeout": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pagedjs_timeout": "v"
+      }
+    },
+    {
+      "name": "key \"paged_timeout\"",
+      "raw": {
+        "paged_timeout": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pagedjs_timeout": "v"
+      }
+    },
+    {
+      "name": "key \"pagedTimeout\"",
+      "raw": {
+        "pagedTimeout": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pagedjs_timeout": "v"
+      }
+    },
+    {
+      "name": "key \"paged-timeout\"",
+      "raw": {
+        "paged-timeout": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pagedjs_timeout": "v"
+      }
+    },
+    {
+      "name": "key \"documentId\"",
+      "raw": {
+        "documentId": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"effectiveDate\"",
+      "raw": {
+        "effectiveDate": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "effective_date": "v"
+      }
+    },
+    {
+      "name": "key \"pipelineProfile\"",
+      "raw": {
+        "pipelineProfile": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "pipeline_profile": "v"
+      }
+    },
+    {
+      "name": "key \"document id\"",
+      "raw": {
+        "document id": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"DOCUMENT_ID\"",
+      "raw": {
+        "DOCUMENT_ID": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "document_id": "v"
+      }
+    },
+    {
+      "name": "key \"Title\"",
+      "raw": {
+        "Title": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "title": "v"
+      }
+    },
+    {
+      "name": "key \"My-Document ID\"",
+      "raw": {
+        "My-Document ID": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "my_document_id": "v"
+      }
+    },
+    {
+      "name": "key \"someComplexKey-Name\"",
+      "raw": {
+        "someComplexKey-Name": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "some_complex_key_name": "v"
+      }
+    },
+    {
+      "name": "key \"TOC\"",
+      "raw": {
+        "TOC": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "toc": true
+      }
+    },
+    {
+      "name": "key \"Fancy Lists\"",
+      "raw": {
+        "Fancy Lists": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "fancy_lists": true
+      }
+    },
+    {
+      "name": "key \"running-header\"",
+      "raw": {
+        "running-header": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "running_header": "v"
+      }
+    },
+    {
+      "name": "key \"firstPage\"",
+      "raw": {
+        "firstPage": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "first_page": "v"
+      }
+    },
+    {
+      "name": "key \"doc_type\"",
+      "raw": {
+        "doc_type": "v"
+      },
+      "options": {
+        "applyDefaults": false
+      },
+      "result": {
+        "doc_type": "v"
+      }
+    },
+    {
+      "name": "string title = \"  Padded  \"",
+      "raw": {
+        "title": "  Padded  "
+      },
+      "result": {
+        "title": "Padded",
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "string title = 123",
+      "raw": {
+        "title": 123
+      },
+      "result": {
+        "title": "123",
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "string title = \"\"",
+      "raw": {
+        "title": ""
+      },
+      "result": {
+        "title": "",
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "string title = true",
+      "raw": {
+        "title": true
+      },
+      "result": {
+        "title": "true",
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "string title = null",
+      "raw": {
+        "title": null
+      },
+      "result": {
+        "title": null,
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = \"5\"",
+      "raw": {
+        "revision": "5"
+      },
+      "result": {
+        "revision": 5,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = \"3.14\"",
+      "raw": {
+        "revision": "3.14"
+      },
+      "result": {
+        "revision": 3.14,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = \"  42  \"",
+      "raw": {
+        "revision": "  42  "
+      },
+      "result": {
+        "revision": 42,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = \"not-a-number\"",
+      "raw": {
+        "revision": "not-a-number"
+      },
+      "result": {
+        "revision": "not-a-number",
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = 7",
+      "raw": {
+        "revision": 7
+      },
+      "result": {
+        "revision": 7,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = \"1e3\"",
+      "raw": {
+        "revision": "1e3"
+      },
+      "result": {
+        "revision": 1,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = \"\"",
+      "raw": {
+        "revision": ""
+      },
+      "result": {
+        "revision": "",
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = true",
+      "raw": {
+        "revision": true
+      },
+      "result": {
+        "revision": true,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "number revision = null",
+      "raw": {
+        "revision": null
+      },
+      "result": {
+        "revision": null,
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = true",
+      "raw": {
+        "toc": true
+      },
+      "result": {
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = false",
+      "raw": {
+        "toc": false
+      },
+      "result": {
+        "toc": false,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \"yes\"",
+      "raw": {
+        "toc": "yes"
+      },
+      "result": {
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \"No\"",
+      "raw": {
+        "toc": "No"
+      },
+      "result": {
+        "toc": false,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \" TRUE \"",
+      "raw": {
+        "toc": " TRUE "
+      },
+      "result": {
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \"1\"",
+      "raw": {
+        "toc": "1"
+      },
+      "result": {
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \"0\"",
+      "raw": {
+        "toc": "0"
+      },
+      "result": {
+        "toc": false,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \"maybe\"",
+      "raw": {
+        "toc": "maybe"
+      },
+      "result": {
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = 1",
+      "raw": {
+        "toc": 1
+      },
+      "result": {
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = 0",
+      "raw": {
+        "toc": 0
+      },
+      "result": {
+        "toc": false,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = \"\"",
+      "raw": {
+        "toc": ""
+      },
+      "result": {
+        "toc": false,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "boolean toc = null",
+      "raw": {
+        "toc": null
+      },
+      "result": {
+        "toc": null,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"2024-01-15\"",
+      "raw": {
+        "effective_date": "2024-01-15"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"01/15/2024\"",
+      "raw": {
+        "effective_date": "01/15/2024"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"1/5/24\"",
+      "raw": {
+        "effective_date": "1/5/24"
+      },
+      "result": {
+        "effective_date": "01/05/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"01-15-2024\"",
+      "raw": {
+        "effective_date": "01-15-2024"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"15 Jan 2024\"",
+      "raw": {
+        "effective_date": "15 Jan 2024"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"January 15, 2024\"",
+      "raw": {
+        "effective_date": "January 15, 2024"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"2024-01-15T12:00:00Z\"",
+      "raw": {
+        "effective_date": "2024-01-15T12:00:00Z"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"2024-01-15T23:30:00\"",
+      "raw": {
+        "effective_date": "2024-01-15T23:30:00"
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"invalid-date\"",
+      "raw": {
+        "effective_date": "invalid-date"
+      },
+      "result": {
+        "effective_date": "invalid-date",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = \"\"",
+      "raw": {
+        "effective_date": ""
+      },
+      "result": {
+        "effective_date": "",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = {\"$date\":\"2024-01-15T00:00:00.000Z\"}",
+      "raw": {
+        "effective_date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        }
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = {\"$date\":\"2024-01-15T18:45:00.000Z\"}",
+      "raw": {
+        "effective_date": {
+          "$date": "2024-01-15T18:45:00.000Z"
+        }
+      },
+      "result": {
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = 20240115",
+      "raw": {
+        "effective_date": 20240115
+      },
+      "result": {
+        "effective_date": 20240115,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "date effective_date = null",
+      "raw": {
+        "effective_date": null
+      },
+      "result": {
+        "effective_date": null,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "array tags = [\"a\",\" b \"]",
+      "raw": {
+        "tags": [
+          "a",
+          " b "
+        ]
+      },
+      "result": {
+        "tags": [
+          "a",
+          "b"
+        ],
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "array tags = \"single\"",
+      "raw": {
+        "tags": "single"
+      },
+      "result": {
+        "tags": [
+          "single"
+        ],
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "array tags = [\" x \",3]",
+      "raw": {
+        "tags": [
+          " x ",
+          3
+        ]
+      },
+      "result": {
+        "tags": [
+          "x",
+          3
+        ],
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "array tags = []",
+      "raw": {
+        "tags": []
+      },
+      "result": {
+        "tags": [],
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "array tags = null",
+      "raw": {
+        "tags": null
+      },
+      "result": {
+        "tags": null,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "aliases collide (doc_id then document_id)",
+      "raw": {
+        "doc_id": "A",
+        "document_id": "B"
+      },
+      "result": {
+        "document_id": "B",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "aliases collide (document_id then docId)",
+      "raw": {
+        "document_id": "B",
+        "docId": "A"
+      },
+      "result": {
+        "document_id": "A",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "unknown fields kept",
+      "raw": {
+        "custom_field": " x ",
+        "nested": {
+          "a": 1
+        }
+      },
+      "result": {
+        "custom_field": " x ",
+        "nested": {
+          "a": 1
+        },
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    },
+    {
+      "name": "full SOP-style frontmatter",
+      "raw": {
+        "title": " SOP ",
+        "doc-id": "SOP-1",
+        "rev": "2",
+        "date": {
+          "$date": "2024-03-05T00:00:00.000Z"
+        },
+        "status": "Approved",
+        "tags": "safety",
+        "fancyLists": "yes",
+        "toc-depth": "4",
+        "profile": "sop",
+        "owner": "Ops"
+      },
+      "result": {
+        "title": "SOP",
+        "document_id": "SOP-1",
+        "revision": 2,
+        "effective_date": "03/05/2024",
+        "status": "Approved",
+        "tags": [
+          "safety"
+        ],
+        "fancy_lists": true,
+        "toc_levels": 4,
+        "pipeline_profile": "sop",
+        "owner": "Ops",
+        "approver": "",
+        "category": "",
+        "styles": [],
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    }
+  ],
+  "normalizeKey": [
+    [
+      "doc_id",
+      "doc_id"
+    ],
+    [
+      "docId",
+      "doc_id"
+    ],
+    [
+      "documentId",
+      "document_id"
+    ],
+    [
+      "document-id",
+      "document_id"
+    ],
+    [
+      "rev",
+      "rev"
+    ],
+    [
+      "revisionNumber",
+      "revision_number"
+    ],
+    [
+      "revision_number",
+      "revision_number"
+    ],
+    [
+      "revision-number",
+      "revision_number"
+    ],
+    [
+      "layout_template",
+      "layout_template"
+    ],
+    [
+      "layoutTemplate",
+      "layout_template"
+    ],
+    [
+      "layout-template",
+      "layout_template"
+    ],
+    [
+      "profile",
+      "profile"
+    ],
+    [
+      "date",
+      "date"
+    ],
+    [
+      "effectiveDate",
+      "effective_date"
+    ],
+    [
+      "effective-date",
+      "effective_date"
+    ],
+    [
+      "documentStatus",
+      "document_status"
+    ],
+    [
+      "document_status",
+      "document_status"
+    ],
+    [
+      "document-status",
+      "document_status"
+    ],
+    [
+      "style",
+      "style"
+    ],
+    [
+      "css",
+      "css"
+    ],
+    [
+      "stylesheet",
+      "stylesheet"
+    ],
+    [
+      "stylesheets",
+      "stylesheets"
+    ],
+    [
+      "syntax_theme",
+      "syntax_theme"
+    ],
+    [
+      "syntaxTheme",
+      "syntax_theme"
+    ],
+    [
+      "syntax-theme",
+      "syntax_theme"
+    ],
+    [
+      "code_theme",
+      "code_theme"
+    ],
+    [
+      "codeTheme",
+      "code_theme"
+    ],
+    [
+      "code-theme",
+      "code_theme"
+    ],
+    [
+      "highlightTheme",
+      "highlight_theme"
+    ],
+    [
+      "highlight-theme",
+      "highlight_theme"
+    ],
+    [
+      "toc_depth",
+      "toc_depth"
+    ],
+    [
+      "tocDepth",
+      "toc_depth"
+    ],
+    [
+      "toc-depth",
+      "toc_depth"
+    ],
+    [
+      "tocLevels",
+      "toc_levels"
+    ],
+    [
+      "toc-levels",
+      "toc_levels"
+    ],
+    [
+      "tocTitle",
+      "toc_title"
+    ],
+    [
+      "toc-title",
+      "toc_title"
+    ],
+    [
+      "tocPageNumbers",
+      "toc_page_numbers"
+    ],
+    [
+      "toc-page-numbers",
+      "toc_page_numbers"
+    ],
+    [
+      "toc_pagenumbers",
+      "toc_pagenumbers"
+    ],
+    [
+      "tocPageLevels",
+      "toc_page_levels"
+    ],
+    [
+      "toc-page-levels",
+      "toc_page_levels"
+    ],
+    [
+      "toc_pagelevels",
+      "toc_pagelevels"
+    ],
+    [
+      "tocMinLevel",
+      "toc_min_level"
+    ],
+    [
+      "toc-min-level",
+      "toc_min_level"
+    ],
+    [
+      "toc_minlevel",
+      "toc_minlevel"
+    ],
+    [
+      "indexTitle",
+      "index_title"
+    ],
+    [
+      "index-title",
+      "index_title"
+    ],
+    [
+      "fancyLists",
+      "fancy_lists"
+    ],
+    [
+      "fancy-lists",
+      "fancy_lists"
+    ],
+    [
+      "colorScheme",
+      "color_scheme"
+    ],
+    [
+      "color-scheme",
+      "color_scheme"
+    ],
+    [
+      "pagedjsTimeout",
+      "pagedjs_timeout"
+    ],
+    [
+      "pagedjs-timeout",
+      "pagedjs_timeout"
+    ],
+    [
+      "paged_timeout",
+      "paged_timeout"
+    ],
+    [
+      "pagedTimeout",
+      "paged_timeout"
+    ],
+    [
+      "paged-timeout",
+      "paged_timeout"
+    ],
+    [
+      "documentId",
+      "document_id"
+    ],
+    [
+      "effectiveDate",
+      "effective_date"
+    ],
+    [
+      "pipelineProfile",
+      "pipeline_profile"
+    ],
+    [
+      "document id",
+      "document_id"
+    ],
+    [
+      "DOCUMENT_ID",
+      "document_id"
+    ],
+    [
+      "Title",
+      "title"
+    ],
+    [
+      "My-Document ID",
+      "my_document_id"
+    ],
+    [
+      "someComplexKey-Name",
+      "some_complex_key_name"
+    ],
+    [
+      "TOC",
+      "toc"
+    ],
+    [
+      "Fancy Lists",
+      "fancy_lists"
+    ],
+    [
+      "running-header",
+      "running_header"
+    ],
+    [
+      "firstPage",
+      "first_page"
+    ],
+    [
+      "doc_type",
+      "doc_type"
+    ]
+  ],
+  "applyDefaults": [
+    [
+      {},
+      {
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    ],
+    [
+      {
+        "status": "Final",
+        "toc": true
+      },
+      {
+        "status": "Final",
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      }
+    ]
+  ],
+  "layering": [
+    {
+      "profile": "book-wiki",
+      "profileDefaults": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3,
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3,
+        "document_id": "",
+        "title": "Opt",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "book-wiki",
+      "profileDefaults": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "revision": 0,
+        "status": "Draft",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "book-wiki",
+      "profileDefaults": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3,
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "revision": 0,
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3,
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "revision": 0,
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "book-wiki",
+      "profileDefaults": {
+        "page_numbers": true,
+        "running_header": true,
+        "toc_levels": 3
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "page_numbers": true,
+        "running_header": false,
+        "toc_levels": 3,
+        "revision": 3,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "page_numbers": true,
+        "running_header": false,
+        "toc_levels": 3,
+        "revision": 3,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "status": "Draft",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "sop",
+      "profileDefaults": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "TBD",
+        "review_cycle": "Annual"
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "",
+        "review_cycle": "Annual",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "",
+        "review_cycle": "Annual",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "sop",
+      "profileDefaults": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "TBD",
+        "review_cycle": "Annual"
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "Jane",
+        "review_cycle": "Annual",
+        "title": "Doc",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "Jane",
+        "review_cycle": "Annual",
+        "title": "Opt",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "sop",
+      "profileDefaults": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "TBD",
+        "review_cycle": "Annual"
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "",
+        "review_cycle": "Annual",
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "",
+        "review_cycle": "Annual",
+        "toc": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "sop",
+      "profileDefaults": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "TBD",
+        "review_cycle": "Annual"
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "",
+        "review_cycle": "Annual",
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Standard Operating Procedure",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "review_status": "Pending Review",
+        "approver": "",
+        "review_cycle": "Annual",
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "standard_letter",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "standard_letter",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "standard_letter",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "standard_letter",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "technical-report",
+      "profileDefaults": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only"
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "technical-report",
+      "profileDefaults": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only"
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "technical-report",
+      "profileDefaults": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only"
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "toc": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "technical-report",
+      "profileDefaults": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only"
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Technical Report",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "department": "Engineering",
+        "version": "1.0",
+        "author": "Engineering Team",
+        "confidentiality": "Internal Use Only",
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/academic.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/academic.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/academic.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/academic.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/color-scheme.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/color-scheme.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/color-scheme.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/color-scheme.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/corporate.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/corporate.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/corporate.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/corporate.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/cover-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/cover-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/cover-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/cover-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/creative.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/creative.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/creative.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/creative.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/handbook.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/handbook.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/handbook.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/handbook.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/legal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/legal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/legal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/legal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/minimal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/minimal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/minimal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/minimal.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/standard_letter_example.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/standard_letter_example.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/standard_letter_example.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Memo",
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "toc": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/standard_letter_example.json",
+      "profileDefaults": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "doc_type": "Letter",
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": false,
+        "running_header": false,
+        "running_footer": false,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical-form.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical-form.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical-form.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical-form.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/technical.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/title-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/title-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/title-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/title-page.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/user-guide.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {},
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/user-guide.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "title": "Doc",
+        "approver": "Jane"
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Doc",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "title": "Opt",
+        "approver": "Jane",
+        "document_id": "",
+        "effective_date": "",
+        "owner": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/user-guide.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "status": "Final",
+        "toc": true,
+        "doc_type": "Memo"
+      },
+      "renderDocument": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Final",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true,
+        "toc": true,
+        "doc_type": "Memo",
+        "document_id": "",
+        "title": "Opt",
+        "effective_date": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    },
+    {
+      "profile": "examples/profiles/user-guide.json",
+      "profileDefaults": {
+        "status": "Draft",
+        "revision": 0,
+        "page_numbers": true,
+        "running_header": true,
+        "running_footer": true
+      },
+      "frontmatter": {
+        "rev": "3",
+        "date": {
+          "$date": "2024-01-15T00:00:00.000Z"
+        },
+        "running_header": false
+      },
+      "renderDocument": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index"
+      },
+      "renderMarkdown": {
+        "status": "Draft",
+        "revision": 3,
+        "page_numbers": true,
+        "running_header": false,
+        "running_footer": true,
+        "effective_date": "01/15/2024",
+        "document_id": "",
+        "title": "Opt",
+        "owner": "",
+        "approver": "",
+        "category": "",
+        "tags": [],
+        "styles": [],
+        "pipeline_profile": "standard_letter",
+        "highlight_theme": "github-light",
+        "toc": false,
+        "toc_levels": 3,
+        "toc_min_level": 2,
+        "toc_title": "Contents",
+        "toc_page_numbers": true,
+        "toc_page_levels": 3,
+        "index": false,
+        "index_title": "Index",
+        "extra": 1
+      }
+    }
+  ]
+}

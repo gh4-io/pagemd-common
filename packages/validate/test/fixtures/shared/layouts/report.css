@@ -1,0 +1,3 @@
+@page { size: A4; margin: 20mm; }
+.page-landscape { page: landscape; }
+@page landscape { size: A4 landscape; }

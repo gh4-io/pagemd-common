@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{metadata.title}}</title>
+  {{styles}}
+</head>
+<body>
+  <article class="document">
+    <header class="document-header">
+
+      {{#if metadata.title}}
+      <h1 class="document-title">{{metadata.title}}</h1>
+      {{/if}}
+
+      <div class="document-metadata">
+
+        {{#if metadata.document_id}}
+        <span class="document-id">{{metadata.document_id}}</span>
+        {{/if}}
+
+        {{#if metadata.status}}
+        <span class="document-status">{{metadata.status}}</span>
+        {{/if}}
+
+        {{#if metadata.revision}}
+        <span class="document-revision">Rev {{metadata.revision}}</span>
+        {{/if}}
+
+      </div>
+    </header>
+    <main class="document-content">
+      {{content}}
+    </main>
+  </article>
+</body>
+</html>

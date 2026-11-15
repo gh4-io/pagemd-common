@@ -1,0 +1,28 @@
+{
+  "name": "@pagemd/packs",
+  "version": "0.0.1-rc1",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "pagemd profile packs (phase L2): read, check, install, uninstall and list zipped profiles in the shared profiles folder. Node only (zlib, crypto, fs).",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@pagemd/resolver": "0.0.1-rc1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh4-io/pagemd-common.git",
+    "directory": "packages/packs"
+  },
+  "homepage": "https://github.com/gh4-io/pagemd-common#readme",
+  "bugs": {
+    "url": "https://github.com/gh4-io/pagemd-common/issues"
+  }
+}

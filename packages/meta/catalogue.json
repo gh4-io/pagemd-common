@@ -1,0 +1,398 @@
+{
+  "version": "1.1.0",
+  "description": "The pagemd document-property catalogue. One entry per property. 'default' is present only for properties the parser fills in when they are missing; 'normalize' is the exact rule the parser applies to the value (absent = value passed through unchanged). Everything else is description only. Merged from six sources in phase C7; disagreements are listed in docs/meta-conflicts.md.",
+  "fields": [
+    {
+      "key": "document_id",
+      "type": "string",
+      "label": "Document ID",
+      "help": "Document identifier (e.g., SOP-200, PROC-100)",
+      "default": "",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "pattern": "^[A-Z0-9-]+$", "minLength": 1, "maxLength": 50 },
+      "filenameToken": true,
+      "sources": ["parser", "json", "template"]
+    },
+    {
+      "key": "title",
+      "type": "string",
+      "label": "Title",
+      "help": "Document title",
+      "default": "",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "minLength": 1, "maxLength": 200 },
+      "filenameToken": true,
+      "sources": ["parser", "json", "template"]
+    },
+    {
+      "key": "revision",
+      "type": "number",
+      "label": "Revision",
+      "help": "Revision number (integer or float)",
+      "default": 0,
+      "normalize": { "type": "number", "coerce": true },
+      "validation": { "minimum": 0 },
+      "filenameToken": true,
+      "sources": ["parser", "json", "template"]
+    },
+    {
+      "key": "status",
+      "type": "string",
+      "label": "Status",
+      "help": "Document status",
+      "default": "Draft",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "enum": ["Draft", "Review", "Approved", "Superseded", "Obsolete", "Active"] },
+      "filenameToken": true,
+      "sources": ["parser", "json", "template"]
+    },
+    {
+      "key": "effective_date",
+      "type": "date",
+      "label": "Effective date",
+      "help": "Effective date of the document",
+      "default": "",
+      "normalize": { "type": "date" },
+      "formats": ["MM/DD/YYYY", "MM/DD/YY", "YYYY-MM-DD", "MM-DD-YYYY", "DD MMM YYYY", "ISO8601"],
+      "filenameToken": true,
+      "sources": ["parser", "json"]
+    },
+    {
+      "key": "owner",
+      "type": "string",
+      "label": "Owner",
+      "help": "Document owner (author or responsible party)",
+      "default": "",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "minLength": 1, "maxLength": 100 },
+      "filenameToken": false,
+      "sources": ["parser", "json"]
+    },
+    {
+      "key": "approver",
+      "type": "string",
+      "label": "Approver",
+      "help": "Document approver",
+      "default": "",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "minLength": 1, "maxLength": 100 },
+      "filenameToken": false,
+      "sources": ["parser", "json"]
+    },
+    {
+      "key": "category",
+      "type": "string",
+      "label": "Category",
+      "help": "Document category or classification",
+      "default": "",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "maxLength": 100 },
+      "filenameToken": false,
+      "sources": ["parser", "json"]
+    },
+    {
+      "key": "tags",
+      "type": "list",
+      "label": "Tags",
+      "help": "Document tags for categorization and search",
+      "default": [],
+      "normalize": { "type": "array", "items": "string" },
+      "validation": { "maxItems": 20, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 50 } },
+      "filenameToken": false,
+      "sources": ["parser", "json"]
+    },
+    {
+      "key": "styles",
+      "type": "list",
+      "label": "Extra stylesheets",
+      "help": "CSS files added after the profile's styles (paths or style names)",
+      "default": [],
+      "normalize": { "type": "array", "items": "string" },
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "pipeline_profile",
+      "type": "string",
+      "label": "Profile",
+      "help": "Profile to use for rendering (ID or path)",
+      "default": "standard_letter",
+      "normalize": { "type": "string", "trim": true },
+      "validation": { "minLength": 1, "maxLength": 200 },
+      "filenameToken": true,
+      "sources": ["parser", "json", "renderer"]
+    },
+    {
+      "key": "highlight_theme",
+      "type": "string",
+      "label": "Code color theme",
+      "help": "Shiki theme for code blocks. Read from the frontmatter at parse time",
+      "default": "github-light",
+      "normalize": { "type": "string", "trim": true },
+      "sources": ["parser"]
+    },
+    {
+      "key": "toc",
+      "type": "boolean",
+      "label": "Table of contents",
+      "help": "Enable table of contents",
+      "default": false,
+      "normalize": { "type": "boolean" },
+      "items": ["toc"],
+      "sources": ["parser", "json", "renderer"]
+    },
+    {
+      "key": "toc_levels",
+      "type": "number",
+      "label": "TOC depth",
+      "help": "Maximum heading depth to include in TOC (1-6)",
+      "default": 3,
+      "normalize": { "type": "number", "coerce": true },
+      "items": ["toc"],
+      "sources": ["parser", "json", "renderer"]
+    },
+    {
+      "key": "toc_min_level",
+      "type": "number",
+      "label": "TOC first level",
+      "help": "Smallest heading level in the TOC (2 skips H1)",
+      "default": 2,
+      "normalize": { "type": "number", "coerce": true },
+      "items": ["toc"],
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "toc_title",
+      "type": "string",
+      "label": "TOC title",
+      "help": "TOC heading text",
+      "default": "Contents",
+      "normalize": { "type": "string", "trim": true },
+      "items": ["toc"],
+      "sources": ["parser", "json", "renderer"]
+    },
+    {
+      "key": "toc_page_numbers",
+      "type": "boolean",
+      "label": "TOC page numbers",
+      "help": "Show page numbers in TOC (PDF only)",
+      "default": true,
+      "normalize": { "type": "boolean" },
+      "items": ["toc"],
+      "sources": ["parser", "json", "renderer"]
+    },
+    {
+      "key": "toc_page_levels",
+      "type": "number",
+      "label": "TOC page-number depth",
+      "help": "Deepest heading level that gets a page number in the TOC (PDF only)",
+      "default": 3,
+      "normalize": { "type": "number", "coerce": true },
+      "items": ["toc"],
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "index",
+      "type": "boolean",
+      "label": "Index",
+      "help": "Build a back-of-book index from INDEX markers",
+      "default": false,
+      "normalize": { "type": "boolean" },
+      "items": ["index", "index-marker"],
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "index_title",
+      "type": "string",
+      "label": "Index title",
+      "help": "Index heading text",
+      "default": "Index",
+      "normalize": { "type": "string", "trim": true },
+      "items": ["index"],
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "fancy_lists",
+      "type": "boolean",
+      "label": "Lettered and roman lists",
+      "help": "Parse a., A., i., I. list markers. Read from the frontmatter at parse time",
+      "normalize": { "type": "boolean" },
+      "items": ["fancy-lists"],
+      "sources": ["parser"]
+    },
+    {
+      "key": "hide_first_h1",
+      "type": "boolean",
+      "label": "Hide the first heading",
+      "help": "Does not draw the document's first level-1 heading (it repeats the title). Also a profile default; off unless set",
+      "normalize": { "type": "boolean" },
+      "items": [],
+      "sources": ["parser"]
+    },
+    {
+      "key": "pagedjs_timeout",
+      "type": "number",
+      "label": "PDF layout timeout",
+      "help": "Milliseconds to wait for Paged.js (0 = default 120000, -1 = no limit). Also read as pagedjs.timeout",
+      "normalize": { "type": "number", "coerce": true },
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "color_scheme",
+      "type": "enum",
+      "label": "Color scheme",
+      "help": "light, dark or auto. Read from the raw frontmatter (color_scheme or colorScheme)",
+      "values": ["light", "dark", "auto"],
+      "sources": ["parser", "renderer"]
+    },
+    {
+      "key": "running_header",
+      "type": "string",
+      "accepts": ["string", "object", "boolean"],
+      "label": "Running header",
+      "help": "Page header text, or { left, center, right, inside, outside, span }",
+      "sources": ["renderer", "profile"]
+    },
+    {
+      "key": "running_footer",
+      "type": "string",
+      "accepts": ["string", "object", "boolean"],
+      "label": "Running footer",
+      "help": "Page footer text, or { left, center, right, inside, outside, span }",
+      "sources": ["renderer", "profile"]
+    },
+    {
+      "key": "page_numbers",
+      "type": "string",
+      "accepts": ["boolean", "string"],
+      "label": "Page numbers",
+      "help": "true, or a preset: page, X of Y, Page X, Page X of Y, - X -",
+      "values": ["page", "X of Y", "Page X", "Page X of Y", "- X -"],
+      "sources": ["renderer", "profile"]
+    },
+    {
+      "key": "first_page",
+      "type": "boolean",
+      "accepts": ["boolean", "object"],
+      "label": "First page header/footer",
+      "help": "false hides header and footer on page 1, or { header, footer }",
+      "sources": ["renderer"]
+    },
+    {
+      "key": "page_margin_font_size",
+      "type": "string",
+      "label": "Header/footer font size",
+      "help": "CSS size for header and footer text (default 9pt)",
+      "sources": ["renderer"]
+    },
+    {
+      "key": "subtitle",
+      "type": "string",
+      "label": "Subtitle",
+      "help": "Shown by templates that use {{metadata.subtitle}}",
+      "sources": ["template"]
+    },
+    {
+      "key": "short_title",
+      "type": "string",
+      "label": "Short title",
+      "help": "Shown by templates that use {{metadata.short_title}}",
+      "sources": ["template"]
+    },
+    {
+      "key": "author",
+      "type": "string",
+      "label": "Author",
+      "help": "Shown by templates that use {{metadata.author}}",
+      "sources": ["template", "profile"]
+    },
+    {
+      "key": "version",
+      "type": "string",
+      "label": "Version",
+      "help": "Shown by templates that use {{metadata.version}}. Its own property, not an alias of revision (OQ-18)",
+      "sources": ["template", "profile"]
+    },
+    {
+      "key": "publication_date",
+      "type": "string",
+      "label": "Publication date",
+      "help": "Shown by templates that use {{metadata.publication_date}}. Not reformatted (only effective_date is)",
+      "sources": ["template"]
+    },
+    {
+      "key": "timestamp",
+      "type": "string",
+      "label": "Build timestamp",
+      "help": "Build timestamp (generated at render time, not user-provided)",
+      "formats": ["YYYYMMDD-HHmmssZ"],
+      "generated": true,
+      "filenameToken": true,
+      "sources": ["json"]
+    }
+  ],
+  "aliases": {
+    "doc_id": "document_id",
+    "docId": "document_id",
+    "documentId": "document_id",
+    "document-id": "document_id",
+    "rev": "revision",
+    "revisionNumber": "revision",
+    "revision_number": "revision",
+    "revision-number": "revision",
+    "layout_template": "pipeline_profile",
+    "layoutTemplate": "pipeline_profile",
+    "layout-template": "pipeline_profile",
+    "profile": "pipeline_profile",
+    "date": "effective_date",
+    "effectiveDate": "effective_date",
+    "effective-date": "effective_date",
+    "eff_date": "effective_date",
+    "documentStatus": "status",
+    "document_status": "status",
+    "document-status": "status",
+    "style": "styles",
+    "css": "styles",
+    "stylesheet": "styles",
+    "stylesheets": "styles",
+    "syntax_theme": "highlight_theme",
+    "syntaxTheme": "highlight_theme",
+    "syntax-theme": "highlight_theme",
+    "code_theme": "highlight_theme",
+    "codeTheme": "highlight_theme",
+    "code-theme": "highlight_theme",
+    "highlightTheme": "highlight_theme",
+    "highlight-theme": "highlight_theme",
+    "toc_depth": "toc_levels",
+    "tocDepth": "toc_levels",
+    "toc-depth": "toc_levels",
+    "tocLevels": "toc_levels",
+    "toc-levels": "toc_levels",
+    "tocTitle": "toc_title",
+    "toc-title": "toc_title",
+    "tocPageNumbers": "toc_page_numbers",
+    "toc-page-numbers": "toc_page_numbers",
+    "toc_pagenumbers": "toc_page_numbers",
+    "tocPageLevels": "toc_page_levels",
+    "toc-page-levels": "toc_page_levels",
+    "toc_pagelevels": "toc_page_levels",
+    "tocMinLevel": "toc_min_level",
+    "toc-min-level": "toc_min_level",
+    "toc_minlevel": "toc_min_level",
+    "indexTitle": "index_title",
+    "index-title": "index_title",
+    "fancyLists": "fancy_lists",
+    "fancy-lists": "fancy_lists",
+    "hideFirstH1": "hide_first_h1",
+    "hide-first-h1": "hide_first_h1",
+    "colorScheme": "color_scheme",
+    "color-scheme": "color_scheme",
+    "pagedjsTimeout": "pagedjs_timeout",
+    "pagedjs-timeout": "pagedjs_timeout",
+    "paged_timeout": "pagedjs_timeout",
+    "pagedTimeout": "pagedjs_timeout",
+    "paged-timeout": "pagedjs_timeout"
+  },
+  "gates": {
+    "fancy-lists": { "field": "fancy_lists", "value": true }
+  }
+}

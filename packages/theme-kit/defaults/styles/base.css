@@ -1,0 +1,1360 @@
+/* PageMD Base CSS - Markdown Element Defaults
+ * Source reference: Microsoft VS Code markdown.css (MIT License)
+ * https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css
+ * Enhanced with CSS custom properties for theming (inspired by GitHub's markdown.css)
+ *
+ * This file provides default styling for ALL markdown elements.
+ * It is loaded first in the CSS layer order and can be overridden by:
+ * - primary.css (project overrides)
+ * - profile CSS (profile-specific styles)
+ * - frontmatter CSS (document-specific styles)
+ */
+
+/* ==========================================================================
+   CSS Variables - Color Palette & Typography
+   Supports light (default) and dark themes via @media (prefers-color-scheme)
+   ========================================================================== */
+
+:root {
+	/* Typography Font Stacks */
+	--fontStack-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+	--fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+
+	/* Size Scale (based on 1rem = 16px) */
+	--base-size-4: 0.25rem;
+	--base-size-8: 0.5rem;
+	--base-size-16: 1rem;
+	--base-size-24: 1.5rem;
+	--base-size-40: 2.5rem;
+
+	/* Font Weights */
+	--base-text-weight-normal: 400;
+	--base-text-weight-medium: 500;
+	--base-text-weight-semibold: 600;
+
+	/* Light Theme (default) */
+	--fgColor-default: #1f2328;
+	--fgColor-muted: #59636e;
+	--fgColor-accent: #0969da;
+	--fgColor-success: #1a7f37;
+	--fgColor-attention: #9a6700;
+	--fgColor-danger: #d1242f;
+	--fgColor-done: #8250df;
+
+	--bgColor-default: #ffffff;
+	--bgColor-muted: #f6f8fa;
+	--bgColor-neutral-muted: #818b981f;
+	--bgColor-attention-muted: #fff8c5;
+
+	--borderColor-default: #d1d9e0;
+	--borderColor-muted: #d1d9e0b3;
+	--borderColor-neutral-muted: #d1d9e0b3;
+	--borderColor-accent-emphasis: #0969da;
+	--borderColor-success-emphasis: #1a7f37;
+	--borderColor-attention-emphasis: #9a6700;
+	--borderColor-danger-emphasis: #cf222e;
+	--borderColor-done-emphasis: #8250df;
+
+	/* Syntax Highlighting Colors (light theme) */
+	--color-prettylights-syntax-comment: #59636e;
+	--color-prettylights-syntax-constant: #0550ae;
+	--color-prettylights-syntax-constant-other-reference-link: #0a3069;
+	--color-prettylights-syntax-entity: #6639ba;
+	--color-prettylights-syntax-storage-modifier-import: #1f2328;
+	--color-prettylights-syntax-entity-tag: #0550ae;
+	--color-prettylights-syntax-keyword: #cf222e;
+	--color-prettylights-syntax-string: #0a3069;
+	--color-prettylights-syntax-variable: #953800;
+	--color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+	--color-prettylights-syntax-brackethighlighter-angle: #59636e;
+	--color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+	--color-prettylights-syntax-invalid-illegal-bg: #82071e;
+	--color-prettylights-syntax-carriage-return-text: #f6f8fa;
+	--color-prettylights-syntax-carriage-return-bg: #cf222e;
+	--color-prettylights-syntax-string-regexp: #116329;
+	--color-prettylights-syntax-markup-list: #3b2300;
+	--color-prettylights-syntax-markup-heading: #0550ae;
+	--color-prettylights-syntax-markup-italic: #1f2328;
+	--color-prettylights-syntax-markup-bold: #1f2328;
+	--color-prettylights-syntax-markup-deleted-text: #82071e;
+	--color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+	--color-prettylights-syntax-markup-inserted-text: #116329;
+	--color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+	--color-prettylights-syntax-markup-changed-text: #953800;
+	--color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+	--color-prettylights-syntax-markup-ignored-text: #d1d9e0;
+	--color-prettylights-syntax-markup-ignored-bg: #0550ae;
+	--color-prettylights-syntax-meta-diff-range: #8250df;
+	--color-prettylights-syntax-sublimelinter-gutter-mark: #818b98;
+}
+
+/* Dark theme - respects system preference */
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Dark Theme */
+		--fgColor-default: #f0f6fc;
+		--fgColor-muted: #9198a1;
+		--fgColor-accent: #4493f8;
+		--fgColor-success: #3fb950;
+		--fgColor-attention: #d29922;
+		--fgColor-danger: #f85149;
+		--fgColor-done: #ab7df8;
+
+		--bgColor-default: #0d1117;
+		--bgColor-muted: #151b23;
+		--bgColor-neutral-muted: #656c7633;
+		--bgColor-attention-muted: #bb800926;
+
+		--borderColor-default: #3d444d;
+		--borderColor-muted: #3d444db3;
+		--borderColor-neutral-muted: #3d444db3;
+		--borderColor-accent-emphasis: #1f6feb;
+		--borderColor-success-emphasis: #238636;
+		--borderColor-attention-emphasis: #9e6a03;
+		--borderColor-danger-emphasis: #da3633;
+		--borderColor-done-emphasis: #8957e5;
+
+		/* Syntax Highlighting Colors (dark theme) */
+		--color-prettylights-syntax-comment: #9198a1;
+		--color-prettylights-syntax-constant: #79c0ff;
+		--color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+		--color-prettylights-syntax-entity: #d2a8ff;
+		--color-prettylights-syntax-storage-modifier-import: #f0f6fc;
+		--color-prettylights-syntax-entity-tag: #7ee787;
+		--color-prettylights-syntax-keyword: #ff7b72;
+		--color-prettylights-syntax-string: #a5d6ff;
+		--color-prettylights-syntax-variable: #ffa657;
+		--color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+		--color-prettylights-syntax-brackethighlighter-angle: #9198a1;
+		--color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+		--color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+		--color-prettylights-syntax-carriage-return-text: #f0f6fc;
+		--color-prettylights-syntax-carriage-return-bg: #b62324;
+		--color-prettylights-syntax-string-regexp: #7ee787;
+		--color-prettylights-syntax-markup-list: #f2cc60;
+		--color-prettylights-syntax-markup-heading: #1f6feb;
+		--color-prettylights-syntax-markup-italic: #f0f6fc;
+		--color-prettylights-syntax-markup-bold: #f0f6fc;
+		--color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+		--color-prettylights-syntax-markup-deleted-bg: #67060c;
+		--color-prettylights-syntax-markup-inserted-text: #aff5b4;
+		--color-prettylights-syntax-markup-inserted-bg: #033a16;
+		--color-prettylights-syntax-markup-changed-text: #ffdfb6;
+		--color-prettylights-syntax-markup-changed-bg: #5a1e02;
+		--color-prettylights-syntax-markup-ignored-text: #f0f6fc;
+		--color-prettylights-syntax-markup-ignored-bg: #1158c7;
+		--color-prettylights-syntax-meta-diff-range: #d2a8ff;
+		--color-prettylights-syntax-sublimelinter-gutter-mark: #3d444d;
+	}
+}
+
+/* Explicit dark theme - overrides system preference when data-color-scheme="dark" */
+:root[data-color-scheme="dark"] {
+	/* Dark Theme */
+	--fgColor-default: #f0f6fc;
+	--fgColor-muted: #9198a1;
+	--fgColor-accent: #4493f8;
+	--fgColor-success: #3fb950;
+	--fgColor-attention: #d29922;
+	--fgColor-danger: #f85149;
+	--fgColor-done: #ab7df8;
+
+	--bgColor-default: #0d1117;
+	--bgColor-muted: #151b23;
+	--bgColor-neutral-muted: #656c7633;
+	--bgColor-attention-muted: #bb800926;
+
+	--borderColor-default: #3d444d;
+	--borderColor-muted: #3d444db3;
+	--borderColor-neutral-muted: #3d444db3;
+	--borderColor-accent-emphasis: #1f6feb;
+	--borderColor-success-emphasis: #238636;
+	--borderColor-attention-emphasis: #9e6a03;
+	--borderColor-danger-emphasis: #da3633;
+	--borderColor-done-emphasis: #8957e5;
+
+	/* Syntax Highlighting Colors (dark theme) */
+	--color-prettylights-syntax-comment: #9198a1;
+	--color-prettylights-syntax-constant: #79c0ff;
+	--color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+	--color-prettylights-syntax-entity: #d2a8ff;
+	--color-prettylights-syntax-storage-modifier-import: #f0f6fc;
+	--color-prettylights-syntax-entity-tag: #7ee787;
+	--color-prettylights-syntax-keyword: #ff7b72;
+	--color-prettylights-syntax-string: #a5d6ff;
+	--color-prettylights-syntax-variable: #ffa657;
+	--color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+	--color-prettylights-syntax-brackethighlighter-angle: #9198a1;
+	--color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+	--color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+	--color-prettylights-syntax-carriage-return-text: #f0f6fc;
+	--color-prettylights-syntax-carriage-return-bg: #b62324;
+	--color-prettylights-syntax-string-regexp: #7ee787;
+	--color-prettylights-syntax-markup-list: #f2cc60;
+	--color-prettylights-syntax-markup-heading: #1f6feb;
+	--color-prettylights-syntax-markup-italic: #f0f6fc;
+	--color-prettylights-syntax-markup-bold: #f0f6fc;
+	--color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+	--color-prettylights-syntax-markup-deleted-bg: #67060c;
+	--color-prettylights-syntax-markup-inserted-text: #aff5b4;
+	--color-prettylights-syntax-markup-inserted-bg: #033a16;
+	--color-prettylights-syntax-markup-changed-text: #ffdfb6;
+	--color-prettylights-syntax-markup-changed-bg: #5a1e02;
+	--color-prettylights-syntax-markup-ignored-text: #f0f6fc;
+	--color-prettylights-syntax-markup-ignored-bg: #1158c7;
+	--color-prettylights-syntax-meta-diff-range: #d2a8ff;
+	--color-prettylights-syntax-sublimelinter-gutter-mark: #3d444d;
+}
+
+/* Explicit light theme - overrides system dark preference when data-color-scheme="light" */
+:root[data-color-scheme="light"] {
+	/* Light Theme (same as default :root above) */
+	--fgColor-default: #1f2328;
+	--fgColor-muted: #636c76;
+	--fgColor-accent: #0969da;
+	--fgColor-success: #1a7f37;
+	--fgColor-attention: #9a6700;
+	--fgColor-danger: #d1242f;
+	--fgColor-done: #8250df;
+
+	--bgColor-default: #ffffff;
+	--bgColor-muted: #f6f8fa;
+	--bgColor-neutral-muted: #afb8c133;
+	--bgColor-attention-muted: #fff8c5;
+
+	--borderColor-default: #d1d9e0;
+	--borderColor-muted: #d1d9e0b3;
+	--borderColor-neutral-muted: #d1d9e0b3;
+	--borderColor-accent-emphasis: #0969da;
+	--borderColor-success-emphasis: #1a7f37;
+	--borderColor-attention-emphasis: #bf8700;
+	--borderColor-danger-emphasis: #cf222e;
+	--borderColor-done-emphasis: #8250df;
+
+	/* Syntax Highlighting Colors (light theme) */
+	--color-prettylights-syntax-comment: #59636e;
+	--color-prettylights-syntax-constant: #0550ae;
+	--color-prettylights-syntax-constant-other-reference-link: #0a3069;
+	--color-prettylights-syntax-entity: #6639ba;
+	--color-prettylights-syntax-storage-modifier-import: #1f2328;
+	--color-prettylights-syntax-entity-tag: #0550ae;
+	--color-prettylights-syntax-keyword: #cf222e;
+	--color-prettylights-syntax-string: #0a3069;
+	--color-prettylights-syntax-variable: #953800;
+	--color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+	--color-prettylights-syntax-brackethighlighter-angle: #59636e;
+	--color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+	--color-prettylights-syntax-invalid-illegal-bg: #82071e;
+	--color-prettylights-syntax-carriage-return-text: #f6f8fa;
+	--color-prettylights-syntax-carriage-return-bg: #cf222e;
+	--color-prettylights-syntax-string-regexp: #116329;
+	--color-prettylights-syntax-markup-list: #3b2300;
+	--color-prettylights-syntax-markup-heading: #0550ae;
+	--color-prettylights-syntax-markup-italic: #1f2328;
+	--color-prettylights-syntax-markup-bold: #1f2328;
+	--color-prettylights-syntax-markup-deleted-text: #82071e;
+	--color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+	--color-prettylights-syntax-markup-inserted-text: #116329;
+	--color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+	--color-prettylights-syntax-markup-changed-text: #953800;
+	--color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+	--color-prettylights-syntax-markup-ignored-text: #eaeef2;
+	--color-prettylights-syntax-markup-ignored-bg: #0550ae;
+	--color-prettylights-syntax-meta-diff-range: #8250df;
+	--color-prettylights-syntax-sublimelinter-gutter-mark: #858f99;
+}
+
+/* ==========================================================================
+   Body Defaults
+   ========================================================================== */
+
+body {
+	font-family: var(--fontStack-system);
+	font-size: 14px;
+	font-weight: var(--base-text-weight-normal, 400);
+	margin: 0;
+	padding: 0 26px;
+	line-height: 22px;
+	word-wrap: break-word;
+	color: var(--fgColor-default);
+	background-color: var(--bgColor-default);
+}
+
+/* HTML resets */
+[hidden] {
+	display: none !important;
+}
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+video {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+	text-decoration: none;
+	color: var(--fgColor-accent);
+}
+
+a:hover {
+	text-decoration: underline;
+	color: var(--fgColor-accent);
+}
+
+a code {
+	color: inherit;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 2px solid var(--fgColor-accent);
+	outline-offset: 2px;
+}
+
+/* Abbreviations */
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline dotted;
+}
+
+/* ==========================================================================
+   Horizontal Rules
+   ========================================================================== */
+
+hr {
+	border: 0;
+	height: 0.25em;
+	background-color: var(--borderColor-default);
+	margin: var(--base-size-24) 0;
+}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom: 1px solid var(--borderColor-muted);
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 { font-size: 2em; margin: 0.67em 0; }
+h2 { font-size: 1.5em; margin: 0.83em 0; }
+h3 { font-size: 1.17em; margin: 1em 0; }
+h4 { font-size: 1em; margin: 1.33em 0; }
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+h6 { font-size: 0.67em; margin: 2.33em 0; }
+
+/* ==========================================================================
+   Paragraphs
+   ========================================================================== */
+
+p {
+	margin: 1em 0;
+}
+
+/* Text formatting */
+mark {
+	background-color: var(--bgColor-attention-muted);
+	color: var(--fgColor-default);
+}
+
+del {
+	text-decoration: line-through;
+}
+
+dfn {
+	font-style: italic;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol {
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+/* Fancy list types - use CSS classes for cross-browser case-sensitivity
+   Browser type attribute is case-insensitive, so we add classes in parser:
+   - .list-lower-alpha (from type="a")
+   - .list-upper-alpha (from type="A")
+   - .list-lower-roman (from type="i")
+   - .list-upper-roman (from type="I")
+*/
+ol.list-lower-alpha { list-style-type: lower-alpha !important; }
+ol.list-upper-alpha { list-style-type: upper-alpha !important; }
+ol.list-lower-roman { list-style-type: lower-roman !important; }
+ol.list-upper-roman { list-style-type: upper-roman !important; }
+
+li {
+	margin: 0.25em 0;
+}
+
+li > ul,
+li > ol {
+	margin: 0.25em 0;
+}
+
+/* Nested list styling */
+ul ul {
+	list-style-type: circle;
+}
+
+ul ul ul {
+	list-style-type: square;
+}
+
+/* Task lists (GitHub-style checkboxes) */
+.task-list-item {
+	list-style-type: none;
+}
+
+.task-list-item label {
+	font-weight: var(--base-text-weight-normal, 400);
+}
+
+.task-list-item.enabled label {
+	cursor: pointer;
+}
+
+.task-list-item + .task-list-item {
+	margin-top: var(--base-size-4);
+}
+
+.task-list-item-checkbox {
+	margin: 0 .2em .25em -1.4em;
+	vertical-align: middle;
+}
+
+/* RTL support for task lists */
+ul:dir(rtl) .task-list-item-checkbox {
+	margin: 0 -1.6em .25em .2em;
+}
+
+ol:dir(rtl) .task-list-item-checkbox {
+	margin: 0 -1.6em .25em .2em;
+}
+
+/* Definition lists */
+dl {
+	padding: 0;
+}
+
+dl dt {
+	padding: 0;
+	margin-top: var(--base-size-16);
+	font-size: 1em;
+	font-style: italic;
+	font-weight: var(--base-text-weight-semibold, 600);
+}
+
+dl dd {
+	padding: 0 var(--base-size-16);
+	margin-bottom: var(--base-size-16);
+}
+
+/* Collapsible sections */
+details summary {
+	cursor: pointer;
+}
+
+details, summary {
+	display: block;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1em 0;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid var(--borderColor-muted);
+	font-weight: bold;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+	border: 1px solid var(--borderColor-default);
+}
+
+table > tbody > tr {
+	background-color: var(--bgColor-default);
+	border-top: 1px solid var(--borderColor-muted);
+}
+
+/* Zebra striping via class-based approach (Paged.js nth-child bug #315 workaround).
+ * The parser adds .odd/.even classes to <tr> elements automatically.
+ * Activate with {.striped} on the table via markdown-it-attrs. */
+table.striped > tbody > tr.even,
+table.striped > tbody > tr.even > td {
+	background-color: var(--bgColor-muted);
+}
+
+/* ---------- Merged cells (colspan / rowspan) ---------- */
+
+table td[colspan],
+table th[colspan] {
+	text-align: center;
+}
+
+table td[rowspan],
+table th[rowspan] {
+	vertical-align: middle;
+}
+
+/* ---------- Table captions ---------- */
+
+caption {
+	caption-side: bottom;
+	font-size: 0.9em;
+	font-style: italic;
+	color: var(--fgColor-muted);
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+/* ---------- Table utility classes ---------- */
+
+table.compact td,
+table.compact th {
+	padding: 2px 6px;
+	font-size: 0.9em;
+}
+
+table.no-border td,
+table.no-border th {
+	border: none;
+}
+
+table.no-border th {
+	border-bottom: 2px solid var(--borderColor-default);
+}
+
+table.auto-width {
+	width: auto;
+}
+
+table.small {
+	font-size: 0.85em;
+}
+
+/* ==========================================================================
+   Blockquotes
+   ========================================================================== */
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 0.25em solid var(--borderColor-default);
+	background: transparent;
+	color: var(--fgColor-muted);
+}
+
+/* Footnotes */
+[data-footnote-ref]::before {
+	content: "[";
+}
+
+[data-footnote-ref]::after {
+	content: "]";
+}
+
+.footnotes {
+	font-size: 12px;
+	color: var(--fgColor-muted);
+	border-top: 1px solid var(--borderColor-default);
+}
+
+.footnotes ol {
+	padding-left: var(--base-size-16);
+}
+
+.footnotes ol ul {
+	display: inline-block;
+	padding-left: var(--base-size-16);
+	margin-top: var(--base-size-16);
+}
+
+.footnotes li {
+	position: relative;
+}
+
+.footnotes li:target::before {
+	position: absolute;
+	top: calc(var(--base-size-8) * -1);
+	right: calc(var(--base-size-8) * -1);
+	bottom: calc(var(--base-size-8) * -1);
+	left: calc(var(--base-size-24) * -1);
+	pointer-events: none;
+	content: "";
+	border: 2px solid var(--borderColor-accent-emphasis);
+	border-radius: 6px;
+}
+
+/* ==========================================================================
+   Code
+   ========================================================================== */
+
+code {
+	font-family: var(--fontStack-monospace);
+	font-size: 1em;
+	line-height: 1.357em;
+	color: var(--fgColor-default);
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+	background-color: var(--bgColor-muted);
+}
+
+pre code {
+	color: var(--fgColor-default, inherit);
+	tab-size: 4;
+}
+
+/* Keyboard input */
+kbd {
+	display: inline-block;
+	padding: var(--base-size-4);
+	font: 11px var(--fontStack-monospace);
+	line-height: 10px;
+	color: var(--fgColor-default);
+	vertical-align: middle;
+	background-color: var(--bgColor-muted);
+	border: solid 1px var(--borderColor-neutral-muted);
+	border-radius: 6px;
+	box-shadow: inset 0 -1px 0 var(--borderColor-neutral-muted);
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Page Breaks
+   ========================================================================== */
+
+.break-page {
+	display: block;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	break-after: always;
+	page-break-after: always; /* Legacy fallback */
+}
+
+/* Alternative: Apply break-before to next sibling */
+.break-page + * {
+	break-before: page;
+	page-break-before: always;
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Table of Contents (TOC)
+   ========================================================================== */
+
+/* Placeholder (before TOC is generated) */
+.toc-placeholder {
+	padding: 1rem;
+	border: 1px dashed #9ca3af;
+	border-radius: 4px;
+	background: #f9fafb;
+	color: #6b7280;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+
+.toc-placeholder::before {
+	content: "Table of Contents will be generated here";
+	font-style: italic;
+}
+
+/* Generated TOC - clean styling without box */
+.toc {
+	margin: 1.5rem 0;
+	padding: 1rem 1.5rem;
+	background: transparent;
+	border: none;
+}
+
+.toc-title {
+	font-size: 1.25em;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid #e5e7eb;
+}
+
+.toc ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.toc li {
+	margin: 0.25rem 0;
+}
+
+.toc li ul {
+	padding-left: 1.5rem;
+}
+
+.toc a {
+	display: flex;
+	align-items: baseline;
+	text-decoration: none;
+	color: inherit;
+	line-height: 1.6;
+}
+
+.toc a:hover {
+	color: var(--color-primary, #2563eb);
+}
+
+/* Leader dots - only show when page numbers are present (uses :has() selector) */
+.toc a:has(.toc-page)::after {
+	content: "";
+	flex: 1 1 auto;
+	order: 1;
+	border-bottom: 2px dotted #9ca3af;
+	margin: 0 0.5rem;
+	margin-bottom: 0.25em;
+	min-width: 2rem;
+}
+
+/* Page numbers (PDF only - generated by Paged.js hook) */
+.toc-page {
+	order: 2;
+	flex-shrink: 0;
+	color: #6b7280;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Print-specific adjustments */
+@media print {
+	/* TOC page break behavior - opt-in via .toc-break-after class
+	 *
+	 * Previously forced break-after: page on all TOCs, which required
+	 * every profile to override with !important. Now defaults to auto
+	 * (natural flow) and profiles can add .toc-break-after class or
+	 * their own CSS if they want a page break after the TOC.
+	 */
+	.toc {
+		break-after: auto;
+	}
+
+	/* Opt-in: Add this class to force page break after TOC */
+	.toc.toc-break-after,
+	.toc-break-after .toc {
+		break-after: page;
+	}
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Mermaid Diagrams
+   ========================================================================== */
+
+.mermaid-diagram {
+	margin: 1.5rem 0;
+	text-align: center;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+.mermaid-diagram svg {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Index
+   ========================================================================== */
+
+/* Placeholder (before index is generated) */
+.index-placeholder {
+	padding: 1rem;
+	border: 1px dashed #9ca3af;
+	border-radius: 4px;
+	background: #f9fafb;
+	color: #6b7280;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+
+.index-placeholder::before {
+	content: "Index will be generated here";
+	font-style: italic;
+}
+
+/* Index marker (invisible in output) */
+.index-marker {
+	display: none;
+}
+
+/* Generated book index */
+.book-index {
+	column-count: 2;
+	column-gap: 2rem;
+	break-before: page;
+	page-break-before: always;
+}
+
+.book-index h2 {
+	column-span: all;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.index-section {
+	break-inside: avoid-column;
+	page-break-inside: avoid;
+	margin-bottom: 1rem;
+}
+
+.index-letter {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #374151;
+	border-bottom: 2px solid #e5e7eb;
+	padding-bottom: 0.25rem;
+	margin: 0 0 0.5rem 0;
+}
+
+.index-entries {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.125rem 1rem;
+	margin: 0;
+}
+
+.index-entries dt {
+	font-weight: normal;
+	color: #374151;
+}
+
+.index-entries dd {
+	text-align: right;
+	color: #6b7280;
+	margin: 0;
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - GFM Alerts (markdown-it-github-alerts)
+   ========================================================================== */
+
+.markdown-alert {
+	padding: 1rem 1.25rem;
+	margin: 1rem 0;
+	border-left: 4px solid;
+	border-radius: 0 6px 6px 0;
+	background: #f6f8fa;
+}
+
+.markdown-alert-title {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.markdown-alert-title svg {
+	margin-right: 0.5rem;
+}
+
+.markdown-alert-note {
+	border-color: #0969da;
+}
+.markdown-alert-note .markdown-alert-title {
+	color: #0969da;
+}
+
+.markdown-alert-tip {
+	border-color: #1a7f37;
+}
+.markdown-alert-tip .markdown-alert-title {
+	color: #1a7f37;
+}
+
+.markdown-alert-important {
+	border-color: #8250df;
+}
+.markdown-alert-important .markdown-alert-title {
+	color: #8250df;
+}
+
+.markdown-alert-warning {
+	border-color: #9a6700;
+}
+.markdown-alert-warning .markdown-alert-title {
+	color: #9a6700;
+}
+
+.markdown-alert-caution {
+	border-color: #cf222e;
+}
+.markdown-alert-caution .markdown-alert-title {
+	color: #cf222e;
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Figures
+   ========================================================================== */
+
+figure {
+	margin: 1.5rem 0;
+	text-align: center;
+	break-inside: avoid;
+	page-break-inside: avoid;
+	position: relative;
+	overflow: hidden; /* Essential: clips image to figure bounds for cropping */
+}
+
+figure img {
+	max-width: 100%;
+	height: auto;
+	display: block; /* Removes inline spacing */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	margin-top: 0.5rem;
+	padding-bottom: 0.125rem; /* Prevent descender clipping (g, p, y) under overflow: hidden */
+	font-size: 0.875rem;
+	line-height: 1.4;
+	color: #6b7280;
+	font-style: italic;
+}
+
+.fig-num {
+	font-weight: 600;
+}
+
+/* Figure width variants */
+.width-full {
+	width: 100%;
+}
+
+.width-half {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.width-third {
+	width: 33.333%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.width-quarter {
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ==========================================================================
+   Figure Crop Support (CSS object-view-box)
+   ========================================================================== */
+
+/**
+ * Figure crop uses CSS object-view-box: inset() on the <img> element.
+ * object-view-box crops the image AND adjusts its intrinsic dimensions,
+ * so the layout automatically adapts (no JavaScript needed).
+ *
+ * Supported in Chrome 104+, Edge 104+ (Puppeteer + VS Code webview).
+ */
+
+/* Cropped figure container */
+figure[style*="--crop-"] {
+	overflow: hidden;    /* Safety: clip any overflow from rounding */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Cropped image - object-view-box handles dimensions */
+figure[style*="--crop-"] img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Annotated Images
+   ========================================================================== */
+
+.annotated-image-container {
+	margin: 1.5rem 0;
+	text-align: center;
+	break-inside: avoid;
+	page-break-inside: avoid;
+	overflow: visible; /* badges at the image edge stick out; figure's crop clipping would cut them off */
+}
+
+.image-wrapper {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+
+.image-wrapper img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* SVG annotation shapes layer - overlays boxes and arrows on image.
+   viewBox is 0-100 with preserveAspectRatio="none" so shape coordinates are
+   image percentages; strokes use vector-effect to avoid distortion. */
+.annotation-shapes {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	pointer-events: none;
+	/* No z-index: a stacking context here would stop a highlight's multiply blend reaching the picture (FIX-S50). Badges (10) and text (8) still sit above. */
+}
+
+/* Text overlays - HTML (not SVG <text>) so glyphs are never stretched.
+   (x, y) is the top-left corner; font-size/color/background set inline. */
+.annotation-text {
+	position: absolute;
+	padding: 0.1em 0.35em;
+	border-radius: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+	white-space: nowrap;
+	text-align: left;
+	pointer-events: none;
+	z-index: 8;
+}
+
+/* Marker circles - positioned absolutely, centered on coordinate point */
+.marker {
+	position: absolute;
+	transform: translate(-50%, -50%);
+
+	/* Size - CSS custom property for override */
+	width: var(--marker-size, 1.4rem);
+	height: var(--marker-size, 1.4rem);
+	min-width: var(--marker-size, 1.4rem);
+
+	/* Shape */
+	border-radius: 50%;
+
+	/* Colors - CSS custom properties for theming */
+	background-color: var(--marker-color, #cc0000);
+	border: 2px solid var(--marker-border, white);
+	color: white;
+
+	/* Text centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* Typography */
+	font-size: var(--marker-font-size, 0.65rem);
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+
+	/* Visual polish */
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	pointer-events: none;
+	z-index: 10;
+}
+
+/* Legend section below image */
+.annotation-legend {
+	margin-top: 1rem;
+	padding: 1rem;
+	background: var(--legend-background, #f8f9fa);
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	text-align: left;
+}
+
+/* Legend grid layout - responsive columns */
+.legend-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--legend-columns, 3), 1fr);
+	gap: 0.4rem 1rem;
+	font-size: 9pt;
+}
+
+/* Individual legend item */
+.legend-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.4rem;
+}
+
+/* Legend number badge (mirrors marker appearance) */
+.legend-num {
+	background: var(--marker-color, #cc0000);
+	color: white;
+	border-radius: 50%;
+	width: 1.1rem;
+	height: 1.1rem;
+	min-width: 1.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.55rem;
+	font-weight: bold;
+	flex-shrink: 0;
+}
+
+/* Legend text */
+.legend-text {
+	flex: 1;
+	line-height: 1.3;
+	color: #374151;
+}
+
+/* Print optimization */
+@media print {
+	.annotated-image-container {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	.annotation-legend {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Custom Callouts ([[WARNING]]/[[DANGER]])
+   ========================================================================== */
+
+.callout {
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: 6px;
+	border-left: 4px solid;
+}
+
+.callout-label {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	letter-spacing: 0.05em;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.callout-content {
+	line-height: 1.5;
+}
+
+.callout-warning {
+	background: #fff8e6;
+	border-color: #f59e0b;
+}
+.callout-warning .callout-label {
+	color: #b45309;
+}
+
+.callout-danger {
+	background: #fef2f2;
+	border-color: #ef4444;
+}
+.callout-danger .callout-label {
+	color: #b91c1c;
+}
+
+/* Inline callouts */
+.callout-inline {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.125rem 0.5rem;
+	margin: 0 0.25rem;
+	border-radius: 4px;
+	border-left: none;
+	font-size: 0.75rem;
+}
+
+.callout-inline .callout-label {
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   PageMD Extended Syntax - Custom Containers (:::name blocks)
+   ========================================================================== */
+
+.container {
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: 6px;
+	background: #f9fafb;
+	border: 1px solid #e5e7eb;
+}
+
+.container-details {
+	background: #f0f9ff;
+	border-color: #bfdbfe;
+}
+
+.container-aside {
+	background: #fefce8;
+	border-color: #fde68a;
+	border-left: 4px solid #f59e0b;
+}
+
+.container-columns {
+	column-count: 2;
+	column-gap: 2rem;
+}
+
+.container-spoiler {
+	background: #f3f4f6;
+	border-color: #d1d5db;
+}
+
+.container-spoiler::before {
+	content: "Spoiler: " attr(data-title);
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: #6b7280;
+}
+
+/* ==========================================================================
+   Print Optimizations
+   ========================================================================== */
+
+@media print {
+	/* Show URLs for external links only (http/https), excluding autolinks
+	 *
+	 * Excluded links:
+	 * - Internal anchor links (#section) - clean TOC output
+	 * - Autolinks (.autolink class) - text already IS the URL, no need to repeat
+	 *
+	 * The ^= selector matches hrefs starting with "http".
+	 * The :not(.autolink) excludes links where text equals href.
+	 *
+	 * Fix history:
+	 * - 2026-01-20: Changed from a[href] to a[href^="http"] for anchor exclusion
+	 * - 2026-01-20: Added :not(.autolink) to prevent URL duplication
+	 */
+	a[href^="http"]:not(.autolink)::after {
+		content: " (" attr(href) ")";
+		font-size: 0.8em;
+		color: var(--fgColor-muted);
+	}
+
+	/* Hide utility class content */
+	.no-print {
+		display: none !important;
+	}
+
+	/* Prevent breaks inside code blocks and elements */
+	pre, code {
+		page-break-inside: avoid;
+	}
+
+	/* Prevent heading from being separated from content */
+	h1, h2, h3, h4, h5, h6 {
+		page-break-after: avoid;
+	}
+
+	/* Let long lists flow across pages, but keep each item intact.
+	 *
+	 * `page-break-inside: avoid` on the list itself (the old rule) is fine
+	 * for short lists, but a numbered procedure step whose list holds
+	 * multiple figures is routinely taller than one page - an
+	 * unsatisfiable constraint combined with `h1..h6 { page-break-after:
+	 * avoid }` above, which Paged.js resolves by shoving the *entire*
+	 * list (and its preceding heading) onto the next page, leaving a
+	 * large blank gap and making the heading look like it has a stray
+	 * break under it.
+	 *
+	 * Fix history:
+	 * - 2026-09-24: Traced from a real how-to guide project's override;
+	 *   promoted to a permanent base.css default.
+	 */
+	ul, ol, dl {
+		page-break-inside: auto;
+		break-inside: auto;
+	}
+
+	li {
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+
+	/* Keep figures together */
+	figure {
+		page-break-inside: avoid;
+	}
+
+	/* Keep tables together */
+	table {
+		page-break-inside: avoid;
+	}
+
+	/* Ensure blockquotes don't break awkwardly */
+	blockquote {
+		page-break-inside: avoid;
+	}
+}

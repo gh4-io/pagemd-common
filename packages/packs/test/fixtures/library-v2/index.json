@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "library": "pagemd-library",
+  "version": "0.2.0",
+  "built": "2026-11-01",
+  "latest": {
+    "pml-sop-ink": {
+      "version": "0.2.0",
+      "file": "pml-sop-ink-0.2.0.zip"
+    }
+  },
+  "packs": [
+    {
+      "id": "pml-sop-ink",
+      "type": "sop",
+      "look": "ink",
+      "version": "0.2.0",
+      "file": "pml-sop-ink-0.2.0.zip",
+      "size": 480784,
+      "sha256": "669d073b8d8f81e0d92a4b74e6bf0134485cc9c23da4c5780e87a64870ad85b3"
+    }
+  ]
+}
